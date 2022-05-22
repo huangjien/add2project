@@ -1,1 +1,1 @@
-# Add New Issue to Project
+# Add New Issue/Pull Request to Project
