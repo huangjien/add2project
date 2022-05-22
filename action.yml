@@ -1,0 +1,22 @@
+  name: 'Add New Issue to Project'
+  description: "When a new issue is created, add it to a project's column"
+  author: Jien Huang <huangjien@gmail.com>
+  branding:
+    icon: 'project'
+    color: '#009933'
+  inputs:
+    - name: project_name
+      description: "The project name to add the issue to"
+      type: integer
+      required: true
+    - name: column_name
+      description: "The column name to the issue to"
+      type: integer
+      required: true
+    - name: GITHUB_TOKEN
+      description: "GitHub personal access token"
+      type: string
+      required: true
+  runs:
+    using: 'composite'
+    steps:
